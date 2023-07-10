@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ThatMovieApp</string>
+
+    <!-- Fragment Home -->
+    <string name="watch_this_trailer">Watch this random trailer</string>
+    <string name="top_rated_movies">Top rated movies</string>
+
+    <!-- Fragment Series -->
+    <string name="select_a_genre">Select a genre</string>
+
+    <!-- Media Detail -->
+    <string name="name_not_available">Name not available</string>
+    <string name="date_not_available">Date not available</string>
+    <string name="no_description_available">No description available</string>
+    <string name="genre_not_available">Genre not available</string>
+    <string name="runtime_not_available">Runtime not available</string>
+    <string name="runtime_value">%s minutes</string>
+
+    <!--Error message -->
+    <string name="error_message">An error occurred, please try again later!</string>
+    <string name="error_details_message">Unable to open details, please try again later!</string>
+
+
+    <string name="media_url_dash"><![CDATA[https://www.youtube.com/api/manifest/dash/id/bf5bb2419360daf1/source/youtube?as=fmp4_audio_clear,fmp4_sd_hd_clear&sparams=ip,ipbits,expire,source,id,as&ip=0.0.0.0&ipbits=0&expire=19000000000&signature=51AF5F39AB0CEC3E5497CD9C900EBFEAECCCB5C7.8506521BFC350652163895D4C26DEE124209AA9E&key=ik0]]></string>
+    <string name="item_movie">Movie</string>
+    <string name="item_series">Series</string>
+
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.freecast.thatmovieapp.home.presentation.home.feature.movie.fragment.MovieFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailsMovieActivity"
+            app:destination="@id/detailsMovieActivity" />
+        <argument
+            android:name="media"
+            app:argType="com.freecast.thatmovieapp.home.domain.model.Media" />
+        <argument
+            android:name="mediaType"
+            app:argType="com.freecast.thatmovieapp.home.domain.model.MediaType" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/genreFragment"
+        android:name="com.freecast.thatmovieapp.home.presentation.home.feature.series.fragment.SeriesFragment"
+        android:label="fragment_genre"
+        tools:layout="@layout/fragment_genre" >
+        <action
+            android:id="@+id/action_genreFragment_to_detailsMovieActivity"
+            app:destination="@id/detailsMovieActivity" />
+        <argument
+            android:name="media"
+            app:argType="com.freecast.thatmovieapp.home.domain.model.Media" />
+        <argument
+            android:name="mediaType"
+            app:argType="com.freecast.thatmovieapp.home.domain.model.MediaType" />
+    </fragment>
+
+    <activity
+        android:id="@+id/detailsMovieActivity"
+        android:name="com.freecast.thatmovieapp.home.presentation.mediadetails.activity.DetailsMovieActivity"
+        android:label="DetailsMovieActivity" />
+
+</navigation>
